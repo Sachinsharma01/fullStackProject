@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.header-white {
+  padding: 1em 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.header-white__nav {
+  display: flex;
+  justify-content: center;
+  flex-grow: 4;
+}
+
+.header-white__nav__links {
+  padding: 10px 0;
+}
+
+.header-white__nav__links a {
+  margin: 25px;
+  font-weight: 700;
+  font-size: 1.15em;
+  text-decoration: none;
+  color: #000;
+}
+
+.header-white__nav__links .active {
+  border-bottom: black 4px solid;
+  border-radius: 5px;
+}
+
+.header-white__buttons {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.header-white__buttons__login,
+.header-white__buttons__signup {
+  padding: 0.5rem 1.25rem;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  margin: 0 1rem;
+  background: #5680e9;
+  text-decoration: none;
+  transition: 200ms linear;
+}
+
+.header-white__buttons__signup {
+  background-color: #fff;
+  border: 2px solid #5680e9;
+  color: #5680e9;
+  font-weight: 700;
+}
+
+.header-white__buttons__login:hover {
+  background-color: #381bed;
+}
+
+.header-white__buttons__signup:hover {
+  background-color: #cfcfcf;
+}
