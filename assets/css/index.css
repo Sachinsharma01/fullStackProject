@@ -91,6 +91,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  .banner {
+    background-image: url(../images/hero-bg-mobile.jpg);
+  }
+
   .cards__row-card {
     height: 200px;
     width: 80%;

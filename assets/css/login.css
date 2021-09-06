@@ -1,0 +1,107 @@
+@import url(./main.css);
+
+main {
+  background-image: url(../images/hero-bg-desktop.jpg);
+  background-repeat: no-repeat;
+  height: calc(90vh - 1px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel {
+  padding: 30px;
+  height: 520px;
+  width: 500px;
+  background-image: linear-gradient(
+    to top right,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.1)
+  );
+  box-shadow: 2px 2px 4px 1px rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.panel h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.panel h3 a:hover {
+  text-decoration: underline;
+}
+
+.panel input {
+  padding: 10px 20px;
+  font-size: 26px;
+  margin: 20px;
+  border-radius: 10px;
+  border: #5680e9 solid 4px;
+  background-color: #85a3ee9c;
+  outline: none;
+}
+
+.header-white__buttons__login {
+  width: 30%;
+  padding: 10px;
+  font-size: 22px;
+  margin: 0 auto;
+}
+
+.google-login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.google-login a {
+  width: 50px;
+  height: 50px;
+  background: #5680e941;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.google-login a:hover {
+  background-color: #5680e9b2;
+}
+
+@media screen and (max-width: 600px) {
+  .panel {
+    height: 410px;
+    width: 400px;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .panel input {
+    padding: 8px 13px;
+    font-size: 1rem;
+    margin: 10px;
+    border-radius: 5px;
+    border-width: 2px;
+  }
+
+  .header-white__buttons__login {
+    font-size: 1rem;
+  }
+
+  hr {
+    margin: 10px 0;
+  }
+}
