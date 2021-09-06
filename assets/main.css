@@ -158,3 +158,25 @@
     padding: 1rem;
   }
 }
+.footer {
+  height: 150px;
+  width: 100%;
+  background-color: #001464;
+}
+.footer ul {
+  justify-content: center;
+  list-style-type: none;
+  display: flex;
+}
+.footer ul li {
+  margin-top: 40px;
+  padding: 20px;
+}
+.footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+.footer p {
+  text-align: center;
+  color: white;
+}
