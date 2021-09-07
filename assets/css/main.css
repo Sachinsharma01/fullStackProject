@@ -116,13 +116,13 @@
   border-radius: 15px;
   margin-right: 20px;
   background: #85a3ee9c;
-  border: #5680e9 solid 4px;
+  border: #5680e9 solid 3px;
 }
 
 .show-pass__toggle .show {
   display: block;
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   margin: 2px 2px;
   background-color: #5680e9;
   border-radius: 50%;
