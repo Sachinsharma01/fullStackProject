@@ -1,54 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign up</title>
-    <link rel="stylesheet" href="./assets/css/signup.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/css/signup.css" />
+  </head>
+  <body>
     <header class="header-white">
-        <nav class="header-white__nav">
-            <div class="header-white__nav__links">
-                <a href="#" class="active">Home</a>
-                <a href="#">Explore</a>
-                <a href="#">About</a>
-                <div id="marker"></div>
-            </div>
-        </nav>
-        <div class="header-white__hamburger" id="hamburger"></div>
-        
+      <nav class="header-white__nav">
+        <div class="header-white__nav__links">
+          <a href="#" class="active">Home</a>
+          <a href="#">Explore</a>
+          <a href="#">About</a>
+          <div id="marker"></div>
+        </div>
+      </nav>
+      <div class="header-white__hamburger" id="hamburger"></div>
     </header>
     <main>
-        <form class="panel">
-            <h3>Have Account? <a href="./login.html">Log In</a></h3>
-            <input type="text" placeholder="Email" class="input" />
-            <input type="password" class="input" placeholder="Password" id="password" />
-            <input type="password" class="input" placeholder="Confirm Password" id="password" />
-            <div class="show-pass">
-                <div class="show-pass__toggle" id="showPass">
-                    <span class="show" id="togglePass"></span>
-                </div>
-                <span>Show Password</span>
-            </div>
-            <button class="header-white__buttons__login" type="submit">
-                Sign up
-            </button>
-        </form>
-        <div id="ham-menu">
-            <nav class="header-white__nav ham">
-                <div class="header-white__nav__links">
-                    <a href="#" class="active">Home</a>
-                    <a href="#">Explore</a>
-                    <a href="#">About</a>
-                    <div id="marker"></div>
-                </div>
-            </nav>
+      <form class="panel">
+        <h3>Have Account? <a href="./login.html">Log In</a></h3>
+        <input type="text" placeholder="Email" class="input" id="email" />
+        <input
+          type="password"
+          class="input"
+          placeholder="Password"
+          id="password"
+        />
+        <input
+          type="password"
+          class="input"
+          placeholder="Confirm Password"
+          id="confirm-password"
+        />
+        <div class="show-pass">
+          <div class="show-pass__toggle" id="showPass">
+            <span class="show" id="togglePass"></span>
+          </div>
+          <span>Show Password</span>
         </div>
+        <button class="header-white__buttons__login" id="signup" type="submit">
+          Sign up
+        </button>
+      </form>
+      <div id="ham-menu">
+        <nav class="header-white__nav ham">
+          <div class="header-white__nav__links">
+            <a href="#" class="active">Home</a>
+            <a href="#">Explore</a>
+            <a href="#">About</a>
+            <div id="marker"></div>
+          </div>
+        </nav>
+      </div>
     </main>
-    <script src="./assets/js/main.js">
-    </script>
-    <script src="./assets/js/login.js"></script>
-</body>
+    <script src="./assets/js/main.js"></script>
+    <script type="module" src="./assets/js/signup.js"></script>
+  </body>
 </html>
