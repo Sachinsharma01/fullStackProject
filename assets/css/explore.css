@@ -1,4 +1,4 @@
-@import url("./main.css");
+@import url('./main.css');
 
 /* explore banner */
 .explore_banner {
@@ -43,36 +43,31 @@
   margin: 2%;
 }
 .input__container button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* explore quizzes section */
 .explore__quizzes {
-  height: 90vh;
   display: flex;
-  margin-left: 3.5%;
+  justify-content: center;
+  overflow-x: scroll;
+  flex-direction: row;
+  padding: 20px;
 }
 .box {
-  margin-top: 5%;
+  text-align: center;
   margin-right: 4%;
   border-radius: 10px;
-  height: 50%;
-  width: 30%;
+  height: 300px;
+  width: 300px;
   background-color: #5680e9;
   text-align: center;
   color: white;
 }
+
 .box h2,
 h3 {
   margin-top: 5%;
-}
-.box .quiz__panel {
-  height: 60%;
-  width: 90%;
-  margin-left: 5%;
-  margin-top: 2%;
-  border-radius: 15px;
-  background-color: #edeaff;
 }
 /* media queries */
 @media screen and (max-width: 600px) {
@@ -83,21 +78,16 @@ h3 {
   .input__container input {
     width: 40%;
     padding: 20px;
-    font-size: .7rem;
+    font-size: 0.7rem;
     font-weight: 100;
   }
   .explore_banner h1 {
     margin-top: 18%;
     font-size: xx-large;
   }
-  .explore__quizzes {
-    display: grid;
-  }
   .box {
-    margin-left: 17%;
-    margin-right: 0;
     height: 300px;
-    width: 300px;
+    min-width: 300px;
   }
   .box .quiz__panel {
     width: 270px;
