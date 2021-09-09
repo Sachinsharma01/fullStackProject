@@ -1,0 +1,105 @@
+@import url("./main.css");
+
+/* explore banner */
+.explore_banner {
+  background: linear-gradient(#84ceeb, #381bed);
+  height: 60vh;
+}
+.explore_banner {
+  text-align: center;
+  padding-top: 2%;
+  font-weight: 700;
+}
+.input__container {
+  margin-top: 1%;
+  margin-left: 35%;
+  display: flex;
+}
+
+.input__container input {
+  display: block;
+  border-radius: 10px;
+  width: 25%;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  background-color: #e5e5e5;
+  padding-left: 1%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin: 2%;
+}
+.input__container button {
+  display: block;
+  border-radius: 10px;
+  width: 65px;
+  border: none;
+  background-color: #242bc2;
+  color: white;
+  font-weight: 600;
+  padding-left: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin: 2%;
+}
+.input__container button:hover {
+    cursor: pointer;
+}
+
+/* explore quizzes section */
+.explore__quizzes {
+  height: 90vh;
+  display: flex;
+  margin-left: 3.5%;
+}
+.box {
+  margin-top: 5%;
+  margin-right: 4%;
+  border-radius: 10px;
+  height: 50%;
+  width: 30%;
+  background-color: #5680e9;
+  text-align: center;
+  color: white;
+}
+.box h2,
+h3 {
+  margin-top: 5%;
+}
+.box .quiz__panel {
+  height: 60%;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 2%;
+  border-radius: 15px;
+  background-color: #edeaff;
+}
+/* media queries */
+@media screen and (max-width: 600px) {
+  .input__container {
+    margin-top: 10%;
+    margin-left: 28%;
+  }
+  .input__container input {
+    width: 40%;
+    padding: 20px;
+    font-size: .7rem;
+    font-weight: 100;
+  }
+  .explore_banner h1 {
+    margin-top: 18%;
+    font-size: xx-large;
+  }
+  .explore__quizzes {
+    display: grid;
+  }
+  .box {
+    margin-left: 17%;
+    margin-right: 0;
+    height: 300px;
+    width: 300px;
+  }
+  .box .quiz__panel {
+    width: 270px;
+  }
+}
