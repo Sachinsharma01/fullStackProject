@@ -1,0 +1,144 @@
+@import url(./main.css);
+
+body {
+  background-color: #f5f5f5;
+}
+
+main {
+  display: flex;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  width: 250px;
+  background-color: #fff;
+  height: 100%;
+  padding: 15px;
+  margin-top: 5px;
+}
+
+.blank {
+  display: flex;
+  width: 350px;
+  background-color: transparent;
+}
+
+.sidebar__link {
+  display: flex;
+  padding: 15px;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin: 10px;
+  width: 100%;
+  transition: 100ms;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.sidebar__link.active {
+  background-color: rgb(231, 231, 231);
+  box-shadow: none;
+}
+
+.sidebar__link:hover {
+  background-color: rgb(231, 231, 231);
+  box-shadow: none;
+}
+
+.main {
+  width: 100%;
+  padding: 10% 30px;
+}
+
+.card-row {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  border-radius: 10px;
+  margin: 0 20px 0 0;
+  position: relative;
+  margin: 0 0 0 20px;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0 0;
+}
+
+.card.circle {
+  position: relative;
+  border-radius: 50%;
+  margin: 0 0 0 20px;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0 0;
+}
+
+.card.join {
+  width: 100%;
+  margin: 0;
+}
+
+.card.circle::before,
+.card::before,
+.card.join::before {
+  content: 'Total Games played';
+  margin: -20px 0;
+  font-size: 1rem;
+}
+
+.card::before {
+  content: 'Last Played Quiz';
+}
+
+.card.join::before {
+  content: '';
+}
+
+.games {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  color: white;
+}
+
+.games::before {
+  content: '0';
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    height: 300px;
+    width: 300px;
+  }
+
+  .main {
+    width: 100%;
+    padding: 10px 90px;
+  }
+
+  .card.join {
+    width: 100%;
+    margin: 0;
+    height: 250px;
+  }
+}
