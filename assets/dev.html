@@ -13,15 +13,24 @@
     <header class="header-white">
       <nav class="header-white__nav">
         <div class="header-white__nav__links">
-          <a href="#" class="active">Home</a>
+          <a href="#">Home</a>
           <a href="#">Explore</a>
           <a href="#">About</a>
           <div id="marker"></div>
         </div>
       </nav>
-      <div class="header-white__buttons">
+      <div class="header-white__buttons" id="loginDiv">
         <a href="#" class="header-white__buttons__login">Log in</a>
         <a href="#" class="header-white__buttons__signup">Signup</a>
+      </div>
+      <div id="user">
+        <h1 id="userEmail"></h1>
+        <div class="userMenu">
+          <a href="./dashboard.html">Dashboard</a>
+          <a href="#">Create a Quiz</a>
+          <a href="#" id="logOut">Log Out</a>
+        </div>
+        <div></div>
       </div>
       <div class="header-white__hamburger" id="hamburger"></div>
       <div id="ham-menu">
@@ -33,13 +42,8 @@
             <div id="marker"></div>
           </div>
         </nav>
-        <div class="header-white__buttons ham">
-          <a href="#" class="header-white__buttons__login">Log in</a>
-          <a href="#" class="header-white__buttons__signup">Signup</a>
-        </div>
       </div>
     </header>
-
     <!--Header (2/2) blur white bg-->
 
     <!--card-->
@@ -70,6 +74,6 @@
 
     <!--End-->
 
-    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>
