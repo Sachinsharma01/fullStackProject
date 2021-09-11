@@ -20,3 +20,12 @@ document.getElementById('signup').onclick = function login(e) {
     alert('Password do not match')
   }
 }
+
+pass.onclick = function () {
+  toggle.classList.toggle('active')
+  if (password.type == 'text') {
+    password.type = 'password'
+  } else {
+    password.type = 'text'
+  }
+}
