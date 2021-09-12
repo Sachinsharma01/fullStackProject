@@ -1,2 +1,66 @@
-@import url('./main.css');
-@import url('./dashboard.css');
+@import url("./main.css");
+@import url("./dashboard.css");
+body {
+  background-color: rgb(224, 224, 224);
+}
+.create-quiz {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.quiz__section {
+  /* margin: auto; */
+  margin: 5% 5%;
+  padding: 20px;
+  width: 90%;
+  height: 80%;
+  border-radius: 15px;
+  background-color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.title input {
+  width: 60%;
+  padding: 8px;
+  background-color: #edeaff;
+  border: none;
+  border-radius: 10px;
+}
+.question-inner {
+  padding: 20px;
+}
+.question-inner div {
+  padding: 15px;
+}
+.question-inner div label {
+  padding: 10px;
+}
+.question-inner div input {
+  background-color: #edeaff;
+  border: none;
+  border-radius: 10px;
+  padding: 8px;
+}
+.add-option {
+  float: right;
+  left: 5;
+}
+.add-option:hover {
+    cursor: pointer;
+}
+.text textarea {
+  background-color: #edeaff;
+  border: none;
+  border-radius: 10px;
+}
+@media screen and (max-width: 800px) {
+  .text textarea {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 531px) {
+  .question input {
+    width: 50%;
+  }
+}
