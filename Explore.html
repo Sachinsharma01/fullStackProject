@@ -14,31 +14,34 @@
       <nav class="header-white__nav">
         <div class="header-white__nav__links">
           <a href="./index.html">Home</a>
-          <a href="#" class="active">Explore</a>
+          <a href="./Explore.html" class="active">Explore</a>
           <a href="./about.html">About</a>
           <div id="marker"></div>
         </div>
       </nav>
-      <div class="header-white__buttons">
+      <div class="header-white__buttons" id="loginDiv">
         <a href="./login.html" class="header-white__buttons__login">Log in</a>
         <a href="./signup.html" class="header-white__buttons__signup">Signup</a>
+      </div>
+      <div id="user">
+        <h1 id="userEmail"></h1>
+        <div class="userMenu">
+          <a href="./dashboard.html">Dashboard</a>
+          <a href="#">Create a Quiz</a>
+          <a href="#" id="logOut">Log Out</a>
+        </div>
+        <div></div>
       </div>
       <div class="header-white__hamburger" id="hamburger"></div>
       <div id="ham-menu">
         <nav class="header-white__nav ham">
           <div class="header-white__nav__links">
-            <a href="./index.html" class="active">Home</a>
-            <a href="#">Explore</a>
+            <a href="./index.html">Home</a>
+            <a href="./Explore.html" class="active">Explore</a>
             <a href="./about.html">About</a>
             <div id="marker"></div>
           </div>
         </nav>
-        <div class="header-white__buttons ham">
-          <a href="./login.html" class="header-white__buttons__login">Log in</a>
-          <a href="./signup.html" class="header-white__buttons__signup"
-            >Signup</a
-          >
-        </div>
       </div>
     </header>
 
@@ -48,8 +51,8 @@
         Join Game
       </h1>
       <div class="input__container">
-        <input type="text" placeholder="Enter Quiz Code" />
-        <button class="join__btn">Join</button>
+        <input type="text" placeholder="Enter Quiz Code" id="gameCode" />
+        <button class="join__btn" id="joinBtn">Join</button>
       </div>
     </section>
 
@@ -83,5 +86,7 @@
       </ul>
       <p>© 2021 Quiz Time Inc.</p>
     </footer>
+    <script type="module" src="./assets/js/joinGame.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
   </body>
 </html>

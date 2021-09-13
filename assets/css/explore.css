@@ -28,18 +28,17 @@
   padding-top: 2%;
   padding-bottom: 2%;
   margin: 2%;
+  outline: none;
 }
 .input__container button {
   display: block;
   border-radius: 10px;
-  width: 65px;
   border: none;
   background-color: #242bc2;
   color: white;
+  font-size: 1.25rem;
   font-weight: 600;
-  padding-left: 1%;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding: 10px 30px;
   margin: 2%;
 }
 .input__container button:hover {

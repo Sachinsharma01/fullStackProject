@@ -18,31 +18,38 @@
         </div>
       </nav>
       <div class="header-white__hamburger" id="hamburger"></div>
-      
+      <div id="ham-menu">
+        <nav class="header-white__nav ham">
+          <div class="header-white__nav__links">
+            <a href="./index.html">Home</a>
+            <a href="./Explore.html">Explore</a>
+            <a href="./about.html">About</a>
+            <div id="marker"></div>
+          </div>
         </nav>
       </div>
     </header>
     <main>
       <form class="panel" id="panel">
         <h3>New Here? <a href="#">Create new Account</a></h3>
-          <input type="text" placeholder="Email" id="email" />
-          <input
-            type="password"
-            class="input"
-            placeholder="Password"
-            id="password"
-          />
+        <input type="text" placeholder="Email" id="email" />
+        <input
+          type="password"
+          class="input"
+          placeholder="Password"
+          id="password"
+        />
         <div class="show-pass">
-      <div class="show-pass__toggle" id="showPass">
-        <span class="show" id="togglePass"></span>
-      </div>
-      <span>Show Password</span>
-    </div>
+          <div class="show-pass__toggle" id="showPass">
+            <span class="show" id="togglePass"></span>
+          </div>
+          <span>Show Password</span>
+        </div>
         <button class="header-white__buttons__login" id="login">Log in</button>
         <hr />
         <div class="google-login">
           <h3>Login with</h3>
-          <a href="#"  id="g-auth">G</a>
+          <a href="#" id="g-auth">G</a>
         </div>
       </form>
       <div id="ham-menu">
@@ -57,6 +64,6 @@
       </div>
     </main>
     <script type="module" src="./assets/js/login.js"></script>
-    <script src="./assets/js/main.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
   </body>
 </html>

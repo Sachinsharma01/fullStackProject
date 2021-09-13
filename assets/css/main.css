@@ -18,6 +18,7 @@
 }
 
 .header-white__nav {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-grow: 4;
@@ -44,6 +45,55 @@
   flex-grow: 1;
   display: flex;
   justify-content: center;
+}
+.header-white__buttons.active {
+  display: none;
+}
+
+#userEmail {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0048ff;
+  padding: 0 15px 0 0;
+}
+
+#user:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.userMenu {
+  display: none;
+}
+
+#user:hover > .userMenu {
+  position: absolute;
+  right: 15px;
+  top: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.267);
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
+  transition: 100ms;
+}
+
+.userMenu a {
+  padding: 20px 30px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.userMenu a:hover {
+  background-color: #cacaca;
+}
+
+.header-white__nav p.active {
+  margin-top: 0px;
+  display: block;
 }
 
 .header-white__buttons__login,
@@ -140,9 +190,27 @@
 }
 
 @media screen and (max-width: 600px) {
-  .header-white__buttons,
   .header-white__nav {
     display: none;
+  }
+
+  .header-white__buttons {
+    display: flex;
+    justify-content: end;
+  }
+
+  .header-white {
+    flex-direction: row-reverse;
+    position: relative;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .userMenu {
+    margin: -14px;
+    z-index: 100;
   }
 
   .header-white__hamburger {
@@ -189,6 +257,7 @@
   }
 
   #ham-menu {
+    z-index: 50;
     display: block;
     transform: translateX(-100%);
     background-color: white;

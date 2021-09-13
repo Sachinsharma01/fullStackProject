@@ -9,16 +9,25 @@
   </head>
   <body>
     <header class="header-white">
-        <nav class="header-white__nav">
-            <div class="header-white__nav__links">
-                <a href="./index.html">Home</a>
-                <a href="./Explore.html">Explore</a>
-                <a href="./about.html">About</a>
-                <div id="marker"></div>
-            </div>
+      <nav class="header-white__nav">
+        <div class="header-white__nav__links">
+          <a href="./index.html">Home</a>
+          <a href="./Explore.html">Explore</a>
+          <a href="./about.html">About</a>
+          <div id="marker"></div>
+        </div>
+      </nav>
+      <div class="header-white__hamburger" id="hamburger"></div>
+      <div id="ham-menu">
+        <nav class="header-white__nav ham">
+          <div class="header-white__nav__links">
+            <a href="./index.html">Home</a>
+            <a href="./Explore.html">Explore</a>
+            <a href="./about.html">About</a>
+            <div id="marker"></div>
+          </div>
         </nav>
-        <div class="header-white__hamburger" id="hamburger"></div>
-        
+      </div>
     </header>
     <main>
         <form class="panel">
@@ -61,7 +70,7 @@
         </nav>
       </div>
     </main>
-    <script src="./assets/js/main.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
     <script type="module" src="./assets/js/signup.js"></script>
   </body>
 </html>
