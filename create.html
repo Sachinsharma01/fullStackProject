@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Quiz</title>
+    <link rel="stylesheet" href="./assets/css/create.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header-white">
+        <nav class="header-white__nav">
+            <div class="header-white__nav__links">
+                <a href="./index.html">Home</a>
+                <a href="./Explore.html">Explore</a>
+                <a href="./about.html">About</a>
+                <div id="marker"></div>
+            </div>
+        </nav>
+        <div class="header-white__buttons">
+            <a href="./login.html" class="header-white__buttons__login">Log in</a>
+            <a href="./signup.html" class="header-white__buttons__signup">Sign up</a>
+        </div>
+        <div class="header-white__hamburger" id="hamburger"></div>
+        <div id="ham-menu">
+            <nav class="header-white__nav ham">
+                <div class="header-white__nav__links">
+                    <a href="./index.html" class="active">Home</a>
+                    <a href="./Explore.html">Explore</a>
+                    <a href="./about.html">About</a>
+                    <div id="marker"></div>
+                </div>
+            </nav>
+            <div class="header-white__buttons ham">
+                <a href="./login.html" class="header-white__buttons__login">Log in</a>
+                <a href="./signup.html" class="header-white__buttons__signup">Signup</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- create quiz section -->
+    <section class="create-quiz">
+        <div class="quiz__section">
+            <div class="question-inner">
+                <div class="title">
+                    <label>Title</label>
+                    <input type="text">
+                </div>
+                <div class="question">
+                    <label>Number of Questions</label>
+                    <input type="number" min="1">
+                </div>
+                <div class="text">
+                    <label>Question 1</label>
+                    <textarea cols="80" rows="5"></textarea>
+                </div>
+                <div class="option">
+                    <label>Option 1</label>
+                    <input type="text">
+                </div>
+                <label class="add-option">+ Option</label>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <ul>
+            <li><a href="#">Terms and Services</a></li>
+            <li><a href="#">Privacy & Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+        <p>© 2021 Quiz Time Inc.</p>
+    </footer>
+</body>
+<script src="./assets/js/main.js"></script>
+
+
+</html>
