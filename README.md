@@ -11,4 +11,4 @@ Full Stack Project
 
     b) Sachin Sharma.
 
-Demo Link : https://sachinsharma01.github.io/fullStackProject/
+Demo Link : https://sachinsharma01.github.io/fullStackProject
