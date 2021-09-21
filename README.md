@@ -9,6 +9,10 @@ Full Stack Project
 
     a) Vipin Chaudhary.
 
+    (https://github.com/vpinchaudhary/vpinchaudhary)
+
     b) Sachin Sharma.
+
+    (https://github.com/sachinsharma01/sachinsharma01)
 
 Demo Link : https://sachinsharma01.github.io/fullStackProject
