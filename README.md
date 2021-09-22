@@ -1,4 +1,4 @@
-## Quiz Time 
+# Quiz Time 
 Full Stack Project
 
 1. Project Selected by team 3 September 2021.
@@ -21,13 +21,12 @@ https://vpinchaudhary.github.io/fullStackProject
 
 https://sachinsharma01.github.io/fullStackProject
 
-## References
+# References
 1. Beta-labs (https://www.beta-labs.in/)
 2. W3schools (https://www.w3schools.com/)
 3. MDN (https://developer.mozilla.org/en-US/)
 
-## Project Screenshots
-
+# Project Screenshots
 ## Home Page
 ![](2021-09-22-12-12-15.png)
 
