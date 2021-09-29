@@ -1,85 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create Quiz</title>
-    <link rel="stylesheet" href="./assets/css/create.css">
-</head>
+    <link rel="stylesheet" href="./assets/css/create.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- header -->
     <header class="header-white">
-        <nav class="header-white__nav">
-            <div class="header-white__nav__links">
-                <a href="./index.html">Home</a>
-                <a href="./Explore.html">Explore</a>
-                <a href="./about.html">About</a>
-                <div id="marker"></div>
-            </div>
+      <nav class="header-white__nav">
+        <div class="header-white__nav__links">
+          <a href="#">Home</a>
+          <a href="#">Explore</a>
+          <a href="#">About</a>
+          <div id="marker"></div>
+        </div>
+      </nav>
+      <div class="header-white__buttons" id="loginDiv">
+        <a href="./login.html" class="header-white__buttons__login">Log in</a>
+        <a href="./signup.html" class="header-white__buttons__signup">Signup</a>
+      </div>
+      <div id="user">
+        <h1 id="userEmail"></h1>
+        <div class="userMenu">
+          <a href="./dashboard.html">Dashboard</a>
+          <a href="#">Create a Quiz</a>
+          <a href="#" id="logOut">Log Out</a>
+        </div>
+        <div></div>
+      </div>
+      <div class="header-white__hamburger" id="hamburger"></div>
+      <div id="ham-menu">
+        <nav class="header-white__nav ham">
+          <div class="header-white__nav__links">
+            <a href="#">Home</a>
+            <a href="#">Explore</a>
+            <a href="#">About</a>
+            <div id="marker"></div>
+          </div>
         </nav>
-        <div class="header-white__buttons">
-            <a href="./login.html" class="header-white__buttons__login">Log in</a>
-            <a href="./signup.html" class="header-white__buttons__signup">Sign up</a>
-        </div>
-        <div class="header-white__hamburger" id="hamburger"></div>
-        <div id="ham-menu">
-            <nav class="header-white__nav ham">
-                <div class="header-white__nav__links">
-                    <a href="./index.html" class="active">Home</a>
-                    <a href="./Explore.html">Explore</a>
-                    <a href="./about.html">About</a>
-                    <div id="marker"></div>
-                </div>
-            </nav>
-            <div class="header-white__buttons ham">
-                <a href="./login.html" class="header-white__buttons__login">Log in</a>
-                <a href="./signup.html" class="header-white__buttons__signup">Signup</a>
-            </div>
-        </div>
+      </div>
     </header>
-
     <!-- create quiz section -->
     <section class="create-quiz">
-        <div class="quiz__section">
-            <div class="question-inner">
-                <div class="title">
-                    <label>Title</label>
-                    <input type="text">
-                </div>
-                <div class="question">
-                    <label>Number of Questions</label>
-                    <input type="number" min="1">
-                </div>
-                <div class="text">
-                    <label>Question 1</label>
-                    <textarea cols="80" rows="5"></textarea>
-                </div>
-                <div class="option">
-                    <label>Option 1</label>
-                    <input type="text">
-                </div>
-                <label class="add-option">+ Option</label>
+      <div class="quiz__section">
+        <div class="question-inner">
+          <div id="questionPanel">
+            <div class="title">
+              <label>Title</label>
+              <input type="text" id="title"/>
             </div>
+            <div class="question">
+              <label>Number of Questions</label>
+              <select name="ques" id="selectQues">
+                <option value="">Select</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <button
+              id="nextButton"
+              disabled="true"
+              onclick="createQuestion()"
+              style="
+                margin: auto;
+                display: block;
+                padding: 10px 20px;
+                color: white;
+                font-size: 2rem;
+                font-weight: 700;
+                background-color: blue;
+                border-radius: 10px;
+                outline: none;
+              "
+            >
+              Next
+            </button>
+            <button id="save" style="display: none;">Save</button></div>
+            <button id="finish" disabled style="display: none;">Finish</button></div>
+          </div>
         </div>
+      </div>
     </section>
 
     <footer class="footer">
-        <ul>
-            <li><a href="#">Terms and Services</a></li>
-            <li><a href="#">Privacy & Policy</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Help Center</a></li>
-            <li><a href="#">About Us</a></li>
-        </ul>
-        <p>© 2021 Quiz Time Inc.</p>
+      <ul>
+        <li><a href="#">Terms and Services</a></li>
+        <li><a href="#">Privacy & Policy</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+      <p>© 2021 Quiz Time Inc.</p>
     </footer>
-</body>
-<script src="./assets/js/main.js"></script>
-
-
+  </body>
+  <script type="module" src="./assets/js/main.js"></script>
+  <script type="text/javascript" src="./assets/js/create.js"></script>
+  <script type="module" src="./assets/js/sendData.js"></script>
 </html>

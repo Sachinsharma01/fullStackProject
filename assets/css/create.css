@@ -1,13 +1,13 @@
-@import url("./main.css");
-@import url("./dashboard.css");
+@import url('./main.css');
+@import url('./dashboard.css');
 body {
   background-color: rgb(224, 224, 224);
 }
 .create-quiz {
   width: 100%;
-  height: 100vh;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 .quiz__section {
   /* margin: auto; */
@@ -47,7 +47,7 @@ body {
   left: 5;
 }
 .add-option:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 .text textarea {
   background-color: #edeaff;

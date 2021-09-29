@@ -4,16 +4,15 @@ import {
   signOut,
 } from 'https://www.gstatic.com/firebasejs/9.0.1/firebase-auth.js'
 
-var pass = document.getElementById('showPass')
-var toggle = document.getElementById('togglePass')
-var password = document.getElementById('password')
 var logout = document.getElementById('logOut')
+localStorage.setItem('user', user.email)
 
 onAuthStateChanged(auth, (user) => {
   if (user) {
     document.getElementById('loginDiv').style.display = 'none'
     document.getElementById('userEmail').style.display = 'flex'
     document.getElementById('userEmail').innerText = user.email
+    localStorage.setItem('user', user.email)
   } else {
     document.getElementById('loginDiv').style.display = 'flex'
     document.getElementById('userEmail').style.display = 'none'
@@ -26,6 +25,7 @@ logout.onclick = function () {
     .then(() => {
       console.log('logout')
       window.location = 'index.html'
+      localStorage.removeItem('user')
     })
     .catch((error) => {
       console.log(error)

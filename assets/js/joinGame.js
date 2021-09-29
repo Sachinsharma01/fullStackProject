@@ -6,6 +6,10 @@ import {
 } from 'https://www.gstatic.com/firebasejs/9.0.1/firebase-firestore.js'
 
 document.getElementById('joinBtn').onclick = async function () {
+  if (localStorage.getItem('user') == 'undefined') {
+    console.log('in user')
+    window.location = 'login.html'
+  }
   const code = document.getElementById('gameCode').value
   const db = getFirestore(app)
   const quizIdCol = collection(db, 'quiz')
