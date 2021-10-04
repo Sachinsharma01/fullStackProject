@@ -41,9 +41,10 @@ const finish = async () => {
   const Id = idGenerator()
   try {
     await addDoc(collection(db, 'quiz'), {
-      ques: { ...questions, creator: localStorage.getItem('user') },
+      ques: { ...questions },
       quizId: Id,
       title: localStorage.getItem('title'),
+      creator: localStorage.getItem('user'),
     })
   } catch (r) {
     console.log(r)
