@@ -13,4 +13,5 @@ function clickedOption(e, ans) {
       `label[for=option${ans + 1}]`
     ).style.backgroundColor = 'green'
   }
+  throw new Error('haha')
 }

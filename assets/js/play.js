@@ -10,6 +10,8 @@ if (localStorage.getItem('user') == 'undefined') {
   window.location = 'login.html'
 }
 
+let j = 0
+
 const code = window.location.search.split('code=')[1]
 const db = getFirestore(app)
 const quizIdCol = collection(db, 'quiz')
@@ -19,11 +21,21 @@ const myQuiz = quizObject.filter((quiz) => quiz.quizId == code)
 const title = myQuiz[0].title
 const creator = myQuiz[0].creator
 
+const delay = (ms, create) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log('Done waiting')
+      resolve(ms)
+    }, ms)
+  })
+}
+
 document.getElementById('h1').innerText = title
-console.log(myQuiz[0].ques)
-Object.entries(myQuiz[0].ques).forEach((i) => {
+Object.entries(myQuiz[0].ques).forEach(async (i) => {
   console.log(i)
-  setTimeout(function () {
+  j++
+  await delay(5000 * j).then(() => {
+    document.getElementById('options').innerHTML = ''
     document.getElementById('ques').innerText = `${i[0]} ${i[1].question}`
     const ans = i[1].ans
     const options = i[1].option
@@ -34,9 +46,6 @@ Object.entries(myQuiz[0].ques).forEach((i) => {
         i + 1
       }" onclick="clickedOption(this, ${ans})"/>${options[i]}</label>`
     }
-  }, 500)
+    console.log('hi')
+  })
 })
-
-document.querySelectorAll('input[type="radio"]').onchange = function () {
-  console.log('hello')
-}
