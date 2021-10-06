@@ -1,9 +1,11 @@
+var score = 0;
 function clickedOption(e, ans) {
   if (e.value - 1 == ans) {
     console.log('correct')
     document.querySelector(
       `label[for=option${e.value}]`
     ).style.backgroundColor = 'green'
+    score++;
   } else {
     console.log('wrong')
     document.querySelector(
@@ -15,3 +17,4 @@ function clickedOption(e, ans) {
   }
   throw new Error('haha')
 }
+document.getElementById('score').innerHTML = `<p>${score}</p>`;

@@ -1,0 +1,77 @@
+@import url("./login.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("../images/hero-bg-desktop.jpg");
+}
+main {
+  background: none;
+}
+.panel {
+  height: 400px;
+  width: 600px;
+}
+#h1 {
+  display: block;
+  border-bottom: 3px solid #5680e9;
+  border-radius: 2px;
+}
+#options input {
+  visibility: hidden;
+  z-index: -1;
+}
+#options {
+  display: flex;
+  flex-direction: column;
+}
+.ql {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  height: 50px;
+  width: 462px;
+  border: 3px solid #5680e9;
+  border-radius: 10px;
+  background: rgba(86, 128, 233, 0.27);
+}
+.ql input {
+  margin-left: 40%;
+}
+#score {
+  width: 80px;
+  height: 50px;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 10px;
+  background: #001464;
+}
+#score p {
+  font-size: 20px;
+}
+#num {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+  top: 10;
+  left: 2%;
+  height: 50px;
+  width: 100px;
+  background: linear-gradient(
+    to top right,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.2)
+  );
+  border-radius: 10px;
+}
