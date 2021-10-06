@@ -16,6 +16,4 @@ function clickedOption(e, ans) {
     ).style.backgroundColor = 'green'
   }
   document.getElementById('score').innerHTML = `<p>${score}</p>`;
-  throw new Error('haha')
 }
-document.getElementById('score').innerHTML = `<p>${score}</p>`;

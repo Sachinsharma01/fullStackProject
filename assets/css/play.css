@@ -5,7 +5,8 @@
   box-sizing: border-box;
 }
 body {
-  background: url("../images/hero-bg-desktop.jpg");
+  background: url("../images/hero-bg-desktop.jpg") no-repeat;
+  background-size: cover;
 }
 main {
   background: none;
