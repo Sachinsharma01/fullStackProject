@@ -21,8 +21,8 @@ document.getElementById('signup').onclick = function login(e) {
   }
 }
 
-pass.onclick = function () {
-  toggle.classList.toggle('active')
+document.getElementById('showPass').onclick = function () {
+  document.getElementById('togglePass').classList.toggle('active')
   if (password.type == 'text') {
     password.type = 'password'
   } else {

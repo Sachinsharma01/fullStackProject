@@ -15,5 +15,5 @@ function clickedOption(e, ans) {
       `label[for=option${ans + 1}]`
     ).style.backgroundColor = 'green'
   }
-  document.getElementById('score').innerHTML = `<p>${score}</p>`;
+  document.getElementById('score').innerText = `${score}`;
 }

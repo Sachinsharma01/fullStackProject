@@ -24,7 +24,7 @@ const title = myQuiz[0].title;
 const delay = (ms) => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(ms);
+      resolve(ms/5000);
     }, ms);
   });
 };
@@ -35,7 +35,8 @@ let quizQuesLen = Object.entries(myQuiz[0].ques).length;
 
 Object.entries(myQuiz[0].ques).forEach(async (i) => {
   j++;
-  await delay(5000 * j).then(() => {
+  await delay(5000 * j).then((quesNum) => {
+    document.getElementById("num").innerHTML = `<p>${quesNum} / ${quizQuesLen}</p>`;
     document.getElementById("options").innerHTML = "";
     document.getElementById("ques").innerText = `${i[0]} ${i[1].question}`;
     const ans = i[1].ans;
@@ -54,13 +55,11 @@ Object.entries(myQuiz[0].ques).forEach(async (i) => {
 delay(5000 * (quizQuesLen+1)).then(() => {
   document.getElementById('quiz').innerHTML = 
   `Score = ${
-    document.getElementById('score').value == undefined 
-    ? 0 
-    : document.getElementById('score').value}`
+    document.getElementById('score').innerText}`
   addScore(score);
   delay(5000).then(()=>{
     window.location = "dashboard.html"
   })
 
 });
-document.getElementById("num").innerHTML = `<p>1 / 10</p>`;
+
