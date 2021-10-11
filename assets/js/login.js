@@ -8,31 +8,39 @@ import {
 
 const provider = new GoogleAuthProvider()
 
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    window.location = 'index.html'
+  }
+})
+
 document.getElementById('login').onclick = function (e) {
   e.preventDefault()
+  console.log('in login function')
   const email = document.getElementById('email').value
   const password = document.getElementById('password').value
   signInWithEmailAndPassword(auth, email, password)
-    .then((credentials) => {})
+    .then(() => {
+      window.location = 'Explore.html'
+    })
     .catch((error) => {
       console.log(error)
     })
 }
 
-onAuthStateChanged(auth, (user) => {
-  if (user) {
-    window.location = 'dashboard.html'
-  }
-})
-
 document.getElementById('g-auth').onclick = function () {
   signInWithRedirect(auth, provider)
-    .then((result) => {
-      const credential = GoogleAuthProvider.credentialFromResult(result)
-      const token = credential.accessToken
-      const user = result.user
-    })
+    .then(() => {})
     .catch((error) => {
       console.log(error)
     })
+}
+
+document.getElementById('showPass').onclick = function () {
+  document.getElementById('togglePass').classList.toggle('active')
+  if (password.type == 'text') {
+    password.type = 'password'
+  } else {
+    password.type = 'text'
+  }
 }
