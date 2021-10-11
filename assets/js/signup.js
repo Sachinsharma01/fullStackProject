@@ -1,5 +1,14 @@
 import { auth } from './auth.js'
-import { createUserWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/9.0.1/firebase-auth.js'
+import {
+  createUserWithEmailAndPassword,
+  onAuthStateChanged,
+} from 'https://www.gstatic.com/firebasejs/9.0.1/firebase-auth.js'
+
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    window.location = 'index.html'
+  }
+})
 
 document.getElementById('signup').onclick = function login(e) {
   e.preventDefault()
@@ -10,7 +19,7 @@ document.getElementById('signup').onclick = function login(e) {
     createUserWithEmailAndPassword(auth, email, password)
       .then((credentials) => {
         if (credentials) {
-          window.location.href = './login.html'
+          window.location.href = './Explore.html'
         }
       })
       .catch((error) => {
@@ -21,8 +30,8 @@ document.getElementById('signup').onclick = function login(e) {
   }
 }
 
-pass.onclick = function () {
-  toggle.classList.toggle('active')
+document.getElementById('showPass').onclick = function () {
+  document.getElementById('togglePass').classList.toggle('active')
   if (password.type == 'text') {
     password.type = 'password'
   } else {

@@ -4,8 +4,6 @@ import {
   addDoc,
   collection,
 } from 'https://www.gstatic.com/firebasejs/9.0.1/firebase-firestore.js'
-import { auth } from './auth.js'
-import { onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/9.0.1/firebase-auth.js'
 
 const saveData = document.getElementById('save')
 const finishData = document.getElementById('finish')

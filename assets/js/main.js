@@ -20,7 +20,6 @@ onAuthStateChanged(auth, (user) => {
 })
 
 logout.onclick = function () {
-  console.log('clicked')
   signOut(auth)
     .then(() => {
       console.log('logout')

@@ -181,7 +181,7 @@
 }
 
 .show-pass__toggle .show.active {
-  transform: translateX(200%);
+  transform: translateX(175%);
   transition: 0.2s;
 }
 

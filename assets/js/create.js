@@ -53,6 +53,5 @@ function addAnswerOptions(options) {
   }
 }
 if (localStorage.getItem('user') == 'undefined') {
-  console.log('in user')
   window.location = 'login.html'
 }
