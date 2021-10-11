@@ -48,7 +48,7 @@ function addOption(options) {
 function addAnswerOptions(options) {
   for (let x = 0; x < options; x++) {
     document.getElementById('answer').innerHTML += `<option value="${parseInt(
-      x + 1
+      x
     )}">${parseInt(x + 1)}</option>`
   }
 }
