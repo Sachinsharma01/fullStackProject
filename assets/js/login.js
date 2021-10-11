@@ -43,8 +43,4 @@ document.getElementById('showPass').onclick = function () {
   } else {
     password.type = 'text'
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> e654935ad06e79ed4908dc2ef7f9a937919c88de
