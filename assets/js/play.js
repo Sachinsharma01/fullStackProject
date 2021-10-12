@@ -9,8 +9,6 @@ if (localStorage.getItem('user') == 'undefined') {
   window.location = 'login.html'
 }
 
-const addScore = (score) => {}
-
 let j = 0
 
 const code = window.location.search.split('code=')[1]
@@ -40,7 +38,7 @@ Object.entries(myQuiz[0].ques).forEach(async (i) => {
       'num'
     ).innerHTML = `<p>${quesNum} / ${quizQuesLen}</p>`
     document.getElementById('options').innerHTML = ''
-    document.getElementById('ques').innerText = `${i[0]} ${i[1].question}`
+    document.getElementById('ques').innerText = `${i[1].question}`
     const ans = i[1].ans
     const options = i[1].option
     for (let k = 0; k < options.length; k++) {
@@ -55,10 +53,11 @@ Object.entries(myQuiz[0].ques).forEach(async (i) => {
   })
 })
 delay(5000 * (quizQuesLen + 1)).then(() => {
-  document.getElementById('quiz').innerHTML = `Score = ${
+  document.getElementById(
+    'quiz'
+  ).innerHTML = `<div style="display:flex; justify-content: center; font-size: 3rem;">Score = ${
     document.getElementById('score').innerText
-  }`
-  addScore(score)
+  }</div>`
   delay(5000).then(() => {
     window.location = 'Explore.html'
   })
