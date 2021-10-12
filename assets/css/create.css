@@ -49,13 +49,23 @@ body {
 .add-option:hover {
   cursor: pointer;
 }
+#ques {
+  position: relative;
+}
+#ques .text label {
+  position: absolute;
+  top: 0;
+}
 .text textarea {
+  margin: 10px;
   background-color: #edeaff;
   border: none;
   padding: 10px;
+  font-size: 1.5rem;
   border-radius: 5px;
   resize: none;
 }
+
 #save,
 #finish:enabled {
   border-radius: 10px;

@@ -17,7 +17,7 @@ document.getElementById('nextButton').onclick = function () {
     document.getElementById('questionPanel').innerHTML =
       '<div id="ques"><div class="text"><label>Question ' +
       parseInt(j + 1) +
-      '</label><textarea id="quesCurrent" cols="80" rows="5"></textarea></div><label for="question" class="add-option">Options<select class="add-option" name="ques" id="addOption" onchange="createOption()"><option value="">Select</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></label><label for="answer">Answer<select name="ans" id="answer"><option value="">Select</option></select></label><div id="optionsPanel"></div>'
+      '</label><textarea id="quesCurrent" cols="70" rows="3"></textarea></div><label for="question" class="add-option">Options<select class="add-option" name="ques" id="addOption" onchange="createOption()"><option value="">Select</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></label><label for="answer">Answer<select name="ans" id="answer"><option value="">Select</option></select></label><div id="optionsPanel"></div>'
     if (j == i - 1) {
       this.style.display = 'none'
     }
