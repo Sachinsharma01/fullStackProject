@@ -1,5 +1,5 @@
-@import url('./main.css');
-@import url('./dashboard.css');
+@import url("./main.css");
+@import url("./dashboard.css");
 body {
   background-color: rgb(224, 224, 224);
 }
@@ -52,8 +52,28 @@ body {
 .text textarea {
   background-color: #edeaff;
   border: none;
-  border-radius: 10px;
+  padding: 10px;
+  border-radius: 5px;
   resize: none;
+}
+#save,
+#finish {
+  display: block;
+  border-radius: 10px;
+  border: none;
+  background-color: #242bc2;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 10px 30px;
+  margin: 2%;
+  transition: 0.5s;
+}
+#save:hover,
+#finish:hover {
+  border: 2px soild rgb(18, 1, 58);
+  cursor: pointer;
+  transform: scale(1.1);
 }
 @media screen and (max-width: 800px) {
   .text textarea {
